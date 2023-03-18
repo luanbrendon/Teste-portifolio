@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3a17eb;
+    background-color: #047bfc;
     box-shadow: 0 2px 5 px rgba(0,  0, 0, 0.5);
     height: 50px;
 }
@@ -43,4 +43,98 @@
 
 .links li:hover{
     scale: 1.3;
+}
+
+.about {
+  margin-top: 60px; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.description h2{
+    color:#fff;
+    -webkit-text-stroke: 1px #222;
+    font-size: 50px;
+}
+
+.description span{
+    color: #044efc;
+}
+
+.imagens{
+    flex: 1;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    background: #047bfc;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px #222;
+    overflow: hidden;
+}
+
+.imagens{
+    position: relative;
+}
+
+.imagens img{
+    width: 100%;
+}
+
+.imagens img:last-child{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.boxs{
+    display: flex;
+    gap: 10px;
+}
+
+.top {
+    width: 100%;
+    background: #044efc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.top i {
+    color:#FF4500 ;
+    font-size: 20px;
+    text-shadow: 0 0 10px #FF4500;
+}
+
+.desc {
+    padding: 10px;
+}
+
+.desc p {
+    display: inline;
+    font-family: cambria;
+    margin: 8px;
+    color: #fff;
+    text-shadow: none;
+}
+
+.desc li {
+    list-style: '\2714';
+    color: #FF4500;
 }
