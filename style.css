@@ -4,8 +4,13 @@
     font-family: sans-serif;
 }
 
+.body {
+    padding-bottom: 60px;
+}
+
 .navbar {
     position: fixed;
+    z-index: 10;
     width: 100%;
     top: 0;
     display: flex;
@@ -84,6 +89,13 @@
     cursor: pointer;
     box-shadow: 0 0 5px #222;
     overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px #222,
+    0 0 20px #222;
+    filter: saturate(2);
 }
 
 .imagens{
@@ -101,7 +113,8 @@
 }
 
 .boxs{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -137,4 +150,87 @@
 .desc li {
     list-style: '\2714';
     color: #FF4500;
+}
+
+.about button {
+    padding: 10px 20px;
+    background: #044efc;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 15px rgba(0,  0, 0, 0.5);
+    transition: 0.7s ease;
+}
+
+.about button:hover{
+    scale: 1.2;
+}
+
+.buttom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #999;
+    box-shadow: 0 -2px 5px #888;
+}
+
+.button-bar {
+    display: none;
+}
+
+.buttom i{
+    color: #047bfc;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.buttom i:hover {
+    text-shadow:0 0 10px #047bfc ;
+}
+
+@media(max-width: 1000px){
+    .button-bar{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .on-off {
+        position: fixed;
+        top: 60px;
+        padding: 5px;
+        background: #044efc;
+        color: #fff;
+        border-radius: 50%;
+        left: 20px;
+        font-size: 20px;
+        box-shadow: 0 0 10px #044efc;
+    }
+    .uil-brightness-low{
+        display: none;
+    }
+}
+@media(max-width: 600px) {
+    .boxs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 400px){
+    .boxs{
+        grid-template-columns: 1fr;
+    }
 }
