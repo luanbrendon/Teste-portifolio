@@ -4,8 +4,22 @@
     font-family: sans-serif;
 }
 
-.body {
+body {
     padding-bottom: 60px;
+    background: #fff;
+    transition: 0.7s ease;
+}
+
+body.change {
+    background: #222;
+}
+
+.uil-brightness-low.cday{
+    display: block;
+}
+
+.uil-moon.cdark {
+    display: none;
 }
 
 .navbar {
@@ -106,6 +120,13 @@
     width: 100%;
 }
 
+img.profile.png{
+    width: 1080px;
+    
+}
+
+
+
 .imagens img:last-child{
     position: absolute;
     left: 0;
@@ -183,6 +204,10 @@
     box-shadow: 0 -2px 5px #888;
 }
 
+.bottom.dark{
+    background: #222;
+}
+
 .button-bar {
     display: none;
 }
@@ -208,20 +233,20 @@
     .about{
         flex-direction: column-reverse;
     }
-    .on-off {
-        position: fixed;
-        top: 60px;
-        padding: 5px;
-        background: #044efc;
-        color: #fff;
-        border-radius: 50%;
-        left: 20px;
-        font-size: 20px;
-        box-shadow: 0 0 10px #044efc;
-    }
-    .uil-brightness-low{
-        display: none;
-    }
+}
+.on-off {
+    position: fixed;
+    top: 60px;
+    padding: 5px;
+    background: #044efc;
+    color: #fff;
+    border-radius: 50%;
+    left: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #044efc;
+}
+.uil-brightness-low{
+    display: none;
 }
 @media(max-width: 600px) {
     .boxs{
