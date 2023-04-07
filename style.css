@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
 * {
   margin: 0;
@@ -34,14 +34,33 @@ header span {
 
 header .navegacao-primaria {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
+  perspective: 500px;
 }
 
 header .navegacao-primaria li a {
-  padding: 10px;
   color: #fff;
+  width: 0px;
+  height: 0px;
   font-size: 1.3rem;
+
+}
+
+header .navegacao-primaria li a::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-bottom: 4px solid red;
+  transition: .9s;
+}
+
+header .navegacao-primaria li a:hover::after {
+  width: 100%;
+  height: 0px;
+  padding: 0px;
+  border-bottom: 4 px solid #dc3545;
 }
 
 .section-div {
@@ -68,6 +87,10 @@ header .navegacao-primaria li a {
   color: #f7f7f7;
 }
 
+h2 .digitando {
+  color: #dc3545;
+}
+
 .section-div div p {
   font-family: "Poppins";
   font-weight: 200;
@@ -87,21 +110,20 @@ header .navegacao-primaria li a {
 }
 
 .digitando::after {
-  content: '|';
+  content: "|";
   margin-left: 5px;
   opacity: 1;
   animation: pisca 0.5s infinite;
 }
 
 @keyframes pisca {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-    }
-    
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes inicializar {
@@ -142,7 +164,7 @@ main .sobre {
   font-size: 2.5rem;
   color: #ff5d56;
   margin-bottom: 15px;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: "Berkshire Swash", cursive;
 }
 
 .sobre_titulo p {
@@ -167,7 +189,7 @@ main .sobre {
 }
 
 .sobre img {
-  animation: ladoSecao .6s ease-in-out forwards;
+  animation: ladoSecao 0.6s ease-in-out forwards;
   cursor: pointer;
   grid-row: 2;
   max-width: 100%;
@@ -176,13 +198,13 @@ main .sobre {
 }
 
 .sobre img:hover {
-  transition: .5s ease-in;
+  transition: 0.5s ease-in;
   filter: blur(1px);
 }
 
 .sobre_conteudo {
-  animation: sobeSecao .6s ease-in-out forwards;
- grid-column: 2/-1;
+  animation: sobeSecao 0.6s ease-in-out forwards;
+  grid-column: 2/-1;
   display: grid;
   color: #707070;
   grid-template-columns: 1fr 1fr;
@@ -205,7 +227,7 @@ main .sobre {
   height: 6px;
   width: 60px;
   margin: 20px 0;
-  content: '';
+  content: "";
   display: block;
   border-radius: 5px;
 }
@@ -233,23 +255,24 @@ main .sobre {
 }
 
 .sobre_info p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @keyframes sobeSecao {
   from {
     transform: translate3d(60px, 0, 0);
   }
+
   to {
     transform: rotate3d(0, 0, 0);
   }
 }
 
-
 @keyframes ladoSecao {
   from {
     transform: translate3d(-60px, 0, 0);
   }
+
   to {
     transform: rotate3d(0, 0, 0);
   }
@@ -257,41 +280,93 @@ main .sobre {
 
 /*responsividade*/
 
-@media(max-width: 992px){
+@media (max-width: 992px) {
   .section-div img {
     display: none;
   }
-  .section-div{
+
+  .section-div {
     background-image: url(profile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
-  header .navegacao-primaria{
-    display: none;
+  header {
+    justify-content: space-between;
+    padding: 30px 70px;
+  }
 
+  header .navegacao-primaria {
+    display: none;
   }
 
   header i {
     color: #f7f7f7;
     font-size: 3rem;
   }
+
+  header .navegacao-primaria.ativado {
+    background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+    position: absolute;
+    display: grid;
+    top: 80px;
+    color: white;
+    z-index: 1;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    right: 20px;
+  }
+}
+
+/*animacao*/
+.navegacao-primaria li {
+  transform: rotateX(90deg);
+  transform-origin: top;
+  animation: menu-in 1s ease forwards;
+  opacity: 0;
+}
+
+.navegacao-primaria li:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.navegacao-primaria li:nth-child(3) {
+  animation-delay: 600ms;
+}
+
+.navegacao-primaria li:nth-child(4) {
+  animation-delay: 900ms;
+}
+
+.navegacao-primaria li:nth-child(5) {
+  animation-delay: 1200ms;
+}
+
+.navegacao-primaria li:nth-child(6) {
+  animation-delay: 1500ms;
+}
+
+@keyframes menu-in {
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+
 }
 
 
-@media(max-width: 992px){
+@media (max-width: 992px) {
   .sobre img {
     grid-column: 1/-1;
     justify-self: center;
   }
 
-  .sobre_conteudo{
-    grid-column: 1/-1
-
+  .sobre_conteudo {
+    grid-column: 1/-1;
   }
 }
-
 
 /*sessao services*/
 
@@ -300,6 +375,7 @@ main .sobre {
   margin-top: -30px;
   padding: 60px;
 }
+
 .my_services {
   color: #fff;
   padding: 60px;
@@ -335,18 +411,18 @@ main .sobre {
 .my_services ul li h3 {
   color: #fff;
   font-size: 1.6rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
 }
 
 .my_services ul li p {
   color: #707070;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .my_services li::before {
-  content: '';
-  transition: .5s ease-in-out;
+  content: "";
+  transition: 0.5s ease-in-out;
   border-radius: 6px;
   width: 0px;
   height: 0px;
@@ -357,9 +433,9 @@ main .sobre {
   border-right: 2px solid transparent;
 }
 
-.my_services li::after{
-  content: '';
-  transition: .5s ease-in-out;
+.my_services li::after {
+  content: "";
+  transition: 0.5s ease-in-out;
   border-radius: 6px;
   width: 0px;
   height: 0px;
@@ -373,14 +449,13 @@ main .sobre {
 .my_services li:hover::before {
   width: 100%;
   height: 100%;
-  border-top:2px solid red;
+  border-top: 2px solid red;
   border-right: 2px solid red;
 }
 
 .my_services li:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom:2px solid red;
+  border-bottom: 2px solid red;
   border-left: 2px solid red;
 }
-
