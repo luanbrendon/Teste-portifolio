@@ -3,7 +3,7 @@
 /*efeito escrevendo*/
 
 var typed = new Typed (".digitando", {
-    strings:[",", "Web Designer...", "web Developer...", "Mobile Developer"],
+    strings:[",", "Web Designer", "web Developer", "Mobile Developer"],
     typeSpeed:75,
     BackSpeed:60,
     loop:true

@@ -44,16 +44,15 @@ header .navegacao-primaria li a {
   width: 0px;
   height: 0px;
   font-size: 1.3rem;
-
 }
 
 header .navegacao-primaria li a::after {
-  content: '';
+  content: "";
   width: 0px;
   height: 0px;
   display: block;
   border-bottom: 4px solid red;
-  transition: .9s;
+  transition: 0.9s;
 }
 
 header .navegacao-primaria li a:hover::after {
@@ -306,7 +305,10 @@ main .sobre {
   }
 
   header .navegacao-primaria.ativado {
-    background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+    background: linear-gradient(
+      rgba(43, 42, 42, 0.176),
+      rgba(46, 46, 46, 0.724)
+    );
     position: absolute;
     display: grid;
     top: 80px;
@@ -318,9 +320,7 @@ main .sobre {
     border-radius: 0 0 4px 4px;
     right: 20px;
   }
-}
-
-/*animacao*/
+  /*animacao*/
 .navegacao-primaria li {
   transform: rotateX(90deg);
   transform-origin: top;
@@ -347,15 +347,16 @@ main .sobre {
 .navegacao-primaria li:nth-child(6) {
   animation-delay: 1500ms;
 }
+}
+
+/*animacao*/
 
 @keyframes menu-in {
   to {
     transform: rotate(0);
     opacity: 1;
   }
-
 }
-
 
 @media (max-width: 992px) {
   .sobre img {
@@ -458,4 +459,8 @@ main .sobre {
   height: 100%;
   border-bottom: 2px solid red;
   border-left: 2px solid red;
+}
+
+.my_resume {
+  color: #fff;
 }
