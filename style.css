@@ -96,6 +96,9 @@ h2 .digitando {
   .digitando {
     white-space: nowrap;
   }
+  .section-div div p {
+    white-space: nowrap;
+  }
 }
 
 .section-div div p {
