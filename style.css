@@ -86,8 +86,16 @@ header .navegacao-primaria li a:hover::after {
   color: #f7f7f7;
 }
 
+
 h2 .digitando {
   color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  /* Aplica a propriedade 'white-space' com valor 'nowrap' no elemento que contém o texto */
+  .digitando {
+    white-space: nowrap;
+  }
 }
 
 .section-div div p {
