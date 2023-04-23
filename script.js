@@ -14,6 +14,7 @@ function escrevendoLetra(){
   const titulo = document.querySelector('.digitando');
   ativaLetra(titulo);
 } 
+escrevendoLetra();
 
 function menuMobol() {
   const ativaMenu = document.querySelector(".fa-bars");
