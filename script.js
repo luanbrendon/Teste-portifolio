@@ -1,11 +1,19 @@
 /*efeito escrevendo*/
 
-var typed = new Typed(".digitando", {
-  strings: [",", "Web Designer", "web Developer", "Mobile Developer"],
-  typeSpeed: 75,
-  BackSpeed: 60,
-  loop: true,
-});
+function escrevendoLetra(){
+  function ativaLetra(elemento){
+      const arrTexto = elemento.innerHTML.split('');
+      elemento.innerHTML  = '';
+      arrTexto.forEach((letra, i)=>{
+          setTimeout(()=>{
+              elemento.innerHTML += letra; 
+          }, 75 * i);
+      });
+  }
+
+  const titulo = document.querySelector('.digitando');
+  ativaLetra(titulo);
+} 
 
 function menuMobol() {
   const ativaMenu = document.querySelector(".fa-bars");
