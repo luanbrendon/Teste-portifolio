@@ -1,0 +1,108 @@
+.section-div {
+    animation: inicializar 0.7s forwards;
+    background-color: var(--preto);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-image: url('/Assets/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: var(--branco);
+  }
+  .foto_profile {
+    display: none;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 30px;
+  }
+  
+  .texto_apresentacao {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--branco);
+    margin: 1em 0;
+  }
+  
+  
+  h2 .digitando {
+    color: var(--laranja);
+  }
+
+
+    .digitando {
+      white-space: nowrap;
+    }
+  
+  .texto {
+    font-family: "Poppins";
+    font-weight: 200;
+    color: var(--branco);
+  }
+  
+  .download-cv {
+    justify-self: start;
+    color: var(--branco);
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+  }
+  
+  .digitando::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 0.5s infinite;
+  }
+  
+  @keyframes pisca {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes inicializar {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .section-div {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding: 60px;
+        background-image: none; /* Remova a imagem de fundo */
+    }
+
+    .container {
+        margin-top: 120px;
+        align-self: start;
+        background: none; /* Remova o fundo */
+        padding: 0;
+        border-radius: 0;
+    }
+    .foto_profile{
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+  }
