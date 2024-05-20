@@ -1,131 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="reset.css"> //reset css
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-T1zK2vU6iG7h8d9YjMLU6ocxvBkV7G8PpN83l7EhwhjD/aP/hHp8X9Hn1PFIIQvZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+<html lang="pr-br">
 
-  <body>
-    <header>
-      <h1>Luan <span>Brendon</span></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portifolio</title>
+  <link rel="stylesheet" href="reset.css"> <!--estou resetando o css-->>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-T1zK2vU6iG7h8d9YjMLU6ocxvBkV7G8PpN83l7EhwhjD/aP/hHp8X9Hn1PFIIQvZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1>Luan <span>Brendon</span></h1>
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao" />
+      <label for="menu" class="container__rotulo">
+        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+      </label>
       <nav>
-        <ul class="navegacao-primaria">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="contact">Contact</a></li>
+        <ul class="lista-menu">
+          <li class="lista-menu__item"><a href="#home">Home</a></li>
+          <li class="lista-menu__item"><a href="#about">About</a></li>
+          <li class="lista-menu__item"><a href="#resume">Resume</a></li>
+          <li class="lista-menu__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="lista-menu__item"><a href="#pricing">Pricing</a></li>
+          <li class="lista-menu__item"><a href="contact">Contact</a></li>
         </ul>
-        <i class="fa-solid fa-bars"></i>
       </nav>
-    </header>
-    <section arial-label="seção currículo download Luan" class="section-div">
-      <div>
-        <h2>Olá, eu sou</h2>
-        <h2 class="digitando">Web Developer</h2>
-        <p>
-          Sou estudante de Ciência da Computação e entusiasta em tecnologia,
-          estou em busca de oportunidades para aplicar meus conhecimentos e
-          habilidades em projetos desafiadores e gratificantes. Com experiência
-          em desenvolvimento front-end, estou sempre buscando aprender novas
-          tecnologias e aprimorar minhas habilidades existentes. <br />
-        </p>
-        <a href="docs/Curriculo-2024.pdf" download="Curriculo-2024.pdf" class="download-cv">Download CV</a>
-      </div>
-      <img src="profile.jpg" alt="foto de perfil" />
-    </section>
+    </div>
+  </header>
+  <section arial-label="seção currículo download Luan" class="section-div">
+    <div>
+      <h2>Olá, eu sou</h2>
+      <h2 class="digitando">Web Developer</h2>
+      <p>
+        Sou estudante de Ciência da Computação e entusiasta em tecnologia,
+        estou em busca de oportunidades para aplicar meus conhecimentos e
+        habilidades em projetos desafiadores e gratificantes. Com experiência
+        em desenvolvimento front-end, estou sempre buscando aprender novas
+        tecnologias e aprimorar minhas habilidades existentes. <br />
+      </p>
+      <a href="docs/Curriculo-2024.pdf" download="Curriculo-2024.pdf" class="download-cv">Download CV</a>
+    </div>
+    <img src="Assets/profile.jpg" alt="foto de perfil" />
+  </section>
 
-    <main>
-      <article class="sobre">
-        <div class="sobre_titulo">
-          <h1>About Me</h1>
-          <p>Perfil Profissional - Isso é Tudo sobre mim</p>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <img src="profile.jpg" alt="minha foto" />
-        <div class="sobre_conteudo">
-          <div class="sobre_texto">
-            <h1>Eu sou - Luan Brendon</h1>
-            <p>
-              Olá, pessoal! Sou estudade de ciências da computação e estou em
-              busca da minha primeira oportunidade na área de programação e
-              gostaria de compartilhar um pouco sobre minhas habilidades e
-              experiências. <br />
-
-              Estudande de ciência da computação, tenho grande afinidade com
-              linguagens de programação como Java, Javascript, HTML e CSS, SQL e
-              estrutura de redes e recentemente tenho me aprofundado em Flutter
-              e consumo de API. Me considero uma pessoa dedicada e apaixonada
-              pela área de tecnologia, sempre buscando aprender mais e aprimorar
-              minhas habilidades.
-              <br />
-              <br />
-              Acredito que a programação é uma área com grande potencial de
-              transformação e inovação, e estou animado para contribuir com meu
-              conhecimento e entusiasmo para o desenvolvimento de projetos e
-              soluções criativas.
-              <br />
-              <br />
-              Caso alguém tenha alguma oportunidade ou saiba de algo na área,
-              ficaria muito grato em poder contribuir com meu trabalho e
-              aprendizado. Vamos juntos nessa jornada de crescimento e
-              desenvolvimento profissional. Obrigado!
-            </p>
-          </div>
-          <div class="sobre_info">
-            <p>
-              <i class="fa-solid fa-calendar-days"></i>Data de nascimento 10
-              maio 1996
-            </p>
-            <p>
-              <i class="fa-sharp fa-solid fa-laptop-code"></i> Freelancer:
-              Available
-            </p>
-            <p>
-              <i class="fa-solid fa-location-dot"></i> endereço: Santa Catarina,
-              Brasil
-            </p>
-            <p>
-              <i class="fa-sharp fa-solid fa-globe"></i>línguas faladas: inglês,
-              português
-            </p>
-            <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
-            <p><i class="fa-solid fa-phone-volume"></i> (48) 9 9655-1161</p>
-            <p>
-              <i class="fa-solid fa-envelope"></i>Email: luanbrendonsm@gmail.com
-            </p>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <section class="services">
+  <main>
+    <article class="sobre">
       <div class="sobre_titulo">
         <h1>About Me</h1>
         <p>Perfil Profissional - Isso é Tudo sobre mim</p>
@@ -135,295 +63,350 @@
           <span></span>
         </div>
       </div>
-      <div class="my_services">
-        <ul>
-          <li>
-            <i class="fa-sharp fa-solid fa-pen-to-square"></i>
-            <h3>Web Design</h3>
-            <p>
-              Web design é o processo de criar a aparência visual e a interface
-              de usuário de um site, utilizando elementos como gráficos,
-              tipografia, esquemas de cores e layout para criar um site coeso e
-              esteticamente agradável.
-            </p>
-          </li>
+      <img src="Assets/profile.jpg" alt="minha foto" />
+      <div class="sobre_conteudo">
+        <div class="sobre_texto">
+          <h1>Eu sou - Luan Brendon</h1>
+          <p>
+            Olá, pessoal! Sou estudade de ciências da computação e estou em
+            busca da minha primeira oportunidade na área de programação e
+            gostaria de compartilhar um pouco sobre minhas habilidades e
+            experiências. <br />
 
-          <li>
-            <i class="fa-sharp fa-solid fa-globe"></i>
-            <h3>Web Developer</h3>
-            <p>
-              Um desenvolvedor web é um profissional que trabalha na criação e
-              manutenção de sites e aplicativos da web.
-            </p>
-          </li>
-
-          <li>
-            <i class="fa-brands fa-bootstrap"></i>
-            <h3>BootStrap</h3>
-            <p>
-              Bootstrap é um framework de desenvolvimento web gratuito e de
-              código aberto criado pela equipe do Twitter. Ele consiste em um
-              conjunto de ferramentas, como HTML, CSS e JavaScript, que ajudam
-              os desenvolvedores a criar sites e aplicativos responsivos e
-              mobile-first com rapidez e facilidade.
-            </p>
-          </li>
-
-          <li>
-            <i class="fa-brands fa-react"></i>
-            <h3>React</h3>
-            <p>
-              React é uma biblioteca JavaScript de código aberto usada para
-              criar interfaces de usuário em páginas web e aplicativos móveis.
-              Desenvolvida pelo Facebook, React permite a criação de interfaces
-              de usuário complexas e dinâmicas com facilidade.
-            </p>
-          </li>
-
-          <li>
-            <i class="fa-brands fa-node-js"></i>
-            <h3>Node.js</h3>
-            <p>
-              Node.js, ou simplesmente Node, é um ambiente de tempo de execução
-              (runtime) JavaScript de código aberto que permite aos
-              desenvolvedores criar aplicativos de rede escaláveis e de alta
-              performance.
-            </p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-mobile"></i>
-            <h3>Mobile Developer</h3>
-            <p>
-              Um desenvolvedor mobile é um profissional que cria aplicativos
-              para dispositivos móveis, como smartphones e tablets, em
-              diferentes sistemas operacionais, como iOS e Android.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="my_resume">
-      <div class="sobre_titulo">
-        <h1>My Resume</h1>
-        <p>
-          Ao longo dos meus estudos, tenho aprendido sobre as principais
-          tecnologias utilizadas no desenvolvimento web, como HTML, CSS e
-          JavaScript, além de frameworks como React e Vue. Também estou
-          aprendendo sobre o desenvolvimento mobile, utilizando ferramentas como
-          React Native.
-          <br />
-          Alguns dos meus projetos acadêmicos incluem trabalhos em grupo para
-          desenvolver aplicações web e mobile, enquanto meus projetos pessoais
-          são voltados para a criação de sites e aplicativos para diversas
-          finalidades.
-          <br />
-          Estou sempre em busca de novos desafios e oportunidades para aprimorar
-          minhas habilidades em programação e desenvolvimento de software.
-        </p>
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
+            Estudande de ciência da computação, tenho grande afinidade com
+            linguagens de programação como Java, Javascript, HTML e CSS, SQL e
+            estrutura de redes e recentemente tenho me aprofundado em Flutter
+            e consumo de API. Me considero uma pessoa dedicada e apaixonada
+            pela área de tecnologia, sempre buscando aprender mais e aprimorar
+            minhas habilidades.
+            <br />
+            <br />
+            Acredito que a programação é uma área com grande potencial de
+            transformação e inovação, e estou animado para contribuir com meu
+            conhecimento e entusiasmo para o desenvolvimento de projetos e
+            soluções criativas.
+            <br />
+            <br />
+            Caso alguém tenha alguma oportunidade ou saiba de algo na área,
+            ficaria muito grato em poder contribuir com meu trabalho e
+            aprendizado. Vamos juntos nessa jornada de crescimento e
+            desenvolvimento profissional. Obrigado!
+          </p>
+        </div>
+        <div class="sobre_info">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>Data de nascimento 10
+            maio 1996
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-laptop-code"></i> Freelancer:
+            Available
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> endereço: Santa Catarina,
+            Brasil
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-globe"></i>línguas faladas: inglês,
+            português
+          </p>
+          <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
+          <p><i class="fa-solid fa-phone-volume"></i> (48) 9 9655-1161</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>Email: luanbrendonsm@gmail.com
+          </p>
         </div>
       </div>
-      <div class="resume_generico">
-        <h2 class="experiencie">
-          <i class="fa-solid fa-handshake"></i>EXPERIENCE
-        </h2>
-        <div class="experience_content">
-          <div>
-            <span> 2013-2023 </span>
-            <h3>Tecelão</h3>
-            <p>
-              Desenvolvimento de fitas decorativas, montagem de máquinas,
-              controle de qualidade e desenhos tecnicos
-            </p>
-          </div>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          </ul>
-        </div>
-        <h2 class="education"><i class="fa-solid fa-book">EDUCATION</i></h2>
-        <div class="education_content">
-          <div>
-            <span>2022-2023</span>
-            <h3>Bacharelado em Ciências da Computação - Unisul</h3>
-            <p>
-              Olá! Eu sou um estudante de ciência da computação na Universidade
-              do Sul de Santa Catarina. Meu foco de estudo é o desenvolvimento
-              web e mobile. Atualmente, estou trabalhando em diversos projetos
-              acadêmicos e pessoais para aprimorar minhas habilidades e técnicas
-              a cada dia.
-            </p>
-          </div>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          </ul>
-        </div>
-      </div>
-      <div class="cursos">
-        <div class="my_skill">
-          <h2><i class="fa-sharp fa-regular fa-star"></i>MINHAS HABILIDADES</h2>
-          <div class="skill_content">
-            <h3>HTML 5</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-          <div class="skill_content">
-            <h3>CSS 3</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <i class="fa-solid fa-star-half-stroke"></i>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-          <div class="skill_content">
-            <h3>JAVA</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-          <div class="skill_content">
-            <h3>REACT</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
+    </article>
+  </main>
 
-              <i class="fa-solid fa-star-half-stroke"></i>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-          <div class="skill_content">
-            <h3>JAVASCRIPT</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <i class="fa-solid fa-star-half-stroke"></i>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-          <div class="skill_content">
-            <h3>GIT</h3>
-            <ul>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-sharp fa-solid fa-star"></i></li>
-              <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
-            </ul>
-          </div>
-        </div>
-        <div class="funfacts">
-          <h2><i class="fa-solid fa-heart"></i>CURIOSIDADES</h2>
-          <ul>
-            <li>
-              <i class="fa-solid fa-mug-hot"></i>
-              <span>0</span>
-              <p>Happy Clients</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-medal"></i>
-              <span>0</span>
-              <p>MEDALHAS</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-user"></i>
-              <span>0</span>
-              <p>CLASSIFICAÇÕES DO USUÁRIO</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-users"></i>
-              <span>0</span>
-              <p>prêmios alcançados</p>
-            </li>
-          </ul>
-        </div>
+  <section class="services">
+    <div class="sobre_titulo">
+      <h1>About Me</h1>
+      <p>Perfil Profissional - Isso é Tudo sobre mim</p>
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+    <div class="my_services">
+      <ul>
+        <li>
+          <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+          <h3>Web Design</h3>
+          <p>
+            Web design é o processo de criar a aparência visual e a interface
+            de usuário de um site, utilizando elementos como gráficos,
+            tipografia, esquemas de cores e layout para criar um site coeso e
+            esteticamente agradável.
+          </p>
+        </li>
 
-    <section class="projetos">
-      <div class="sobre_titulo">
-        <h1>Meus projetos</h1>
-        <p>Aqui esta um pouco do que desenvolvi</p>
-        <div aria-label="Secao apenas de ilustracoes">
-          <span></span>
-          <span></span>
-          <span></span>
+        <li>
+          <i class="fa-sharp fa-solid fa-globe"></i>
+          <h3>Web Developer</h3>
+          <p>
+            Um desenvolvedor web é um profissional que trabalha na criação e
+            manutenção de sites e aplicativos da web.
+          </p>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-bootstrap"></i>
+          <h3>BootStrap</h3>
+          <p>
+            Bootstrap é um framework de desenvolvimento web gratuito e de
+            código aberto criado pela equipe do Twitter. Ele consiste em um
+            conjunto de ferramentas, como HTML, CSS e JavaScript, que ajudam
+            os desenvolvedores a criar sites e aplicativos responsivos e
+            mobile-first com rapidez e facilidade.
+          </p>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-react"></i>
+          <h3>React</h3>
+          <p>
+            React é uma biblioteca JavaScript de código aberto usada para
+            criar interfaces de usuário em páginas web e aplicativos móveis.
+            Desenvolvida pelo Facebook, React permite a criação de interfaces
+            de usuário complexas e dinâmicas com facilidade.
+          </p>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-node-js"></i>
+          <h3>Node.js</h3>
+          <p>
+            Node.js, ou simplesmente Node, é um ambiente de tempo de execução
+            (runtime) JavaScript de código aberto que permite aos
+            desenvolvedores criar aplicativos de rede escaláveis e de alta
+            performance.
+          </p>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile Developer</h3>
+          <p>
+            Um desenvolvedor mobile é um profissional que cria aplicativos
+            para dispositivos móveis, como smartphones e tablets, em
+            diferentes sistemas operacionais, como iOS e Android.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="my_resume">
+    <div class="sobre_titulo">
+      <h1>My Resume</h1>
+      <p>
+        Ao longo dos meus estudos, tenho aprendido sobre as principais
+        tecnologias utilizadas no desenvolvimento web, como HTML, CSS e
+        JavaScript, além de frameworks como React e Vue. Também estou
+        aprendendo sobre o desenvolvimento mobile, utilizando ferramentas como
+        React Native.
+        <br />
+        Alguns dos meus projetos acadêmicos incluem trabalhos em grupo para
+        desenvolver aplicações web e mobile, enquanto meus projetos pessoais
+        são voltados para a criação de sites e aplicativos para diversas
+        finalidades.
+        <br />
+        Estou sempre em busca de novos desafios e oportunidades para aprimorar
+        minhas habilidades em programação e desenvolvimento de software.
+      </p>
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="resume_generico">
+      <h2 class="experiencie">
+        <i class="fa-solid fa-handshake"></i>EXPERIENCE
+      </h2>
+      <div class="experience_content">
+        <div>
+          <span> 2013-2023 </span>
+          <h3>Tecelão</h3>
+          <p>
+            Desenvolvimento de fitas decorativas, montagem de máquinas,
+            controle de qualidade e desenhos tecnicos
+          </p>
+        </div>
+        <ul>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+        </ul>
+      </div>
+      <h2 class="education"><i class="fa-solid fa-book">EDUCATION</i></h2>
+      <div class="education_content">
+        <div>
+          <span>2022-2023</span>
+          <h3>Bacharelado em Ciências da Computação - Unisul</h3>
+          <p>
+            Olá! Eu sou um estudante de ciência da computação na Universidade
+            do Sul de Santa Catarina. Meu foco de estudo é o desenvolvimento
+            web e mobile. Atualmente, estou trabalhando em diversos projetos
+            acadêmicos e pessoais para aprimorar minhas habilidades e técnicas
+            a cada dia.
+          </p>
+        </div>
+        <ul>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cursos">
+      <div class="my_skill">
+        <h2><i class="fa-sharp fa-regular fa-star"></i>MINHAS HABILIDADES</h2>
+        <div class="skill_content">
+          <h3>HTML 5</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
+        </div>
+        <div class="skill_content">
+          <h3>CSS 3</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
+        </div>
+        <div class="skill_content">
+          <h3>JAVA</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
+        </div>
+        <div class="skill_content">
+          <h3>REACT</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
+        </div>
+        <div class="skill_content">
+          <h3>JAVASCRIPT</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
+        </div>
+        <div class="skill_content">
+          <h3>GIT</h3>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-regular fa-star-sharp-half-stroke"></i></li>
+          </ul>
         </div>
       </div>
-      <div class="project_models">
+      <div class="funfacts">
+        <h2><i class="fa-solid fa-heart"></i>CURIOSIDADES</h2>
         <ul>
-          <li class="all">All</li>
-          <li class="design">Design</li>
-          <li class="graphic">Graphic</li>
-          <li class="websites">WebSites</li>
-        </ul>
-      </div>
-      <div class="projetos_armazenados">
-        <ul>
-          <li id="design"><img src="inprogress.jpg" alt="" /></li>
-          <li id="design"><img src="inprogress.jpg" alt="" /></li>
-          <li id="design"><img src="inprogress.jpg" alt="" /></li>
-          <li id="graphic"><img src="inprogress.jpg" alt="" /></li>
-          <li id="graphic"><img src="inprogress.jpg" alt="" /></li>
-          <li id="websites"><img src="inprogress.jpg" alt="" /></li>
-          <li id="websites"><img src="inprogress.jpg" alt="" /></li>
-          <li id="websites"><img src="inprogress.jpg" alt="" /></li>
-        </ul>
-      </div>
-      <a href="#">Carregar mais projetos</a>
-    </section>
-    <footer>
-      <div class="sobre_titulo">
-        <h1>Luan Brendon</h1>
-        <p>Minhas redes sociais</p>
-      </div>
-      <nav>
-        <ul class="footer_sociais">
           <li>
-            <a target="_blank" href="https://www.facebook.com/luan.brendon.7/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>0</span>
+            <p>Happy Clients</p>
           </li>
           <li>
-            <a target="_blank" href="https://twitter.com/luanti"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
+            <i class="fa-solid fa-medal"></i>
+            <span>0</span>
+            <p>MEDALHAS</p>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/luan-brendon-138477208/"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+            <i class="fa-solid fa-user"></i>
+            <span>0</span>
+            <p>CLASSIFICAÇÕES DO USUÁRIO</p>
           </li>
           <li>
-            <a target="_blank" href="https://www.instagram.com/luanbrendon_/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/luanbrendon"
-              ><i class="fa-brands fa-github-alt"></i
-            ></a>
+            <i class="fa-solid fa-users"></i>
+            <span>0</span>
+            <p>prêmios alcançados</p>
           </li>
         </ul>
-      </nav>
-      <p class="footer_comercial">
-        Todos os direitos reservados Luan Brendon &copy; - 2023
-      </p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-iAPQaEKCy8TFvkd1jKBE+5oYpVjG8xITgkMZ7wQLfWyJpV7r0BCgCNI2Qe1X0rbB"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+      </div>
+    </div>
+  </div>
+
+  <section class="projetos">
+    <div class="sobre_titulo">
+      <h1>Meus projetos</h1>
+      <p>Aqui esta um pouco do que desenvolvi</p>
+      <div aria-label="Secao apenas de ilustracoes">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="project_models">
+      <ul>
+        <li class="all">All</li>
+        <li class="design">Design</li>
+        <li class="graphic">Graphic</li>
+        <li class="websites">WebSites</li>
+      </ul>
+    </div>
+    <div class="projetos_armazenados">
+      <ul>
+        <li id="design"><img src="inprogress.jpg" alt="" /></li>
+        <li id="design"><img src="inprogress.jpg" alt="" /></li>
+        <li id="design"><img src="inprogress.jpg" alt="" /></li>
+        <li id="graphic"><img src="inprogress.jpg" alt="" /></li>
+        <li id="graphic"><img src="inprogress.jpg" alt="" /></li>
+        <li id="websites"><img src="inprogress.jpg" alt="" /></li>
+        <li id="websites"><img src="inprogress.jpg" alt="" /></li>
+        <li id="websites"><img src="inprogress.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <a href="#">Carregar mais projetos</a>
+  </section>
+  <footer>
+    <div class="sobre_titulo">
+      <h1>Luan Brendon</h1>
+      <p>Minhas redes sociais</p>
+    </div>
+    <nav>
+      <ul class="footer_sociais">
+        <li>
+          <a target="_blank" href="https://www.facebook.com/luan.brendon.7/"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/luanti"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/luan-brendon-138477208/"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/luanbrendon_/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/luanbrendon"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer_comercial">
+      Todos os direitos reservados Luan Brendon &copy; - 2023
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-iAPQaEKCy8TFvkd1jKBE+5oYpVjG8xITgkMZ7wQLfWyJpV7r0BCgCNI2Qe1X0rbB"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

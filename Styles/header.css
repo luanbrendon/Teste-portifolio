@@ -1,0 +1,87 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("/Assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+  }
+
+  .container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("/Assets/Menu\ Aberto.svg");
+  }
+
+  .container__botao:checked ~ .container__rotulo {
+    background: var(--laranja-degrade);
+  }
+
+.cabecalho {
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: var(--branco);
+    padding: 2.5em 2em;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  }
+
+  .container__botao:checked~.lista-menu{
+    display: block;
+  }
+
+  .lista-menu__item {
+    padding: 1em;
+    background-color: var(--cinza);
+  }
+  
+  header h1 {
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  header span {
+    color: #fff;
+  }
+  
+  header .navegacao-primaria {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    perspective: 500px;
+  }
+  
+  header .navegacao-primaria li a {
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+  }
+  
+  header .navegacao-primaria li a::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid red;
+    transition: 0.9s;
+  }
+  
+  header .navegacao-primaria li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4 px solid #dc3545;
+  }
