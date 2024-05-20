@@ -91,7 +91,7 @@ h2 .digitando {
   color: #dc3545;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Aplica a propriedade 'white-space' com valor 'nowrap' no elemento que contém o texto */
   .digitando {
     white-space: nowrap;
