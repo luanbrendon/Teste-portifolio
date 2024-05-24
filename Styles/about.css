@@ -1,0 +1,152 @@
+/* sessao principal sobre mim*/
+  
+.principal {
+    background-color: var(--cor-de-fundo);
+  }
+  
+ .sobre {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .sobre_titulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sobremim {
+    font-size: 2.5rem;
+    color: var(--laranja);
+    margin-bottom: 15px;
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    text-shadow:1px 1px 0px var(--preto),
+    -1px -1px 0px var(--preto),
+    1px -1px 0px var(--preto),
+    -1px 1px 0px var(--preto);
+  }
+  
+  .perfil {
+    color: var(--preto);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    text-shadow:1px 1px 0px var(--verde),
+    -1px -1px 0px var(--verde),
+    1px -1px 0px var(--verde),
+    -1px 1px 0px var(--verde);
+  }
+  
+   .pontos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .ponto {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--laranja);
+  }
+  
+  .sobre img {
+    animation: ladoSecao 0.6s ease-in-out forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 4px;
+    filter: blur(0);
+  }
+  
+  .sobre img:hover {
+    transition: 0.5s ease-in;
+    filter: blur(1px);
+  }
+  
+  .sobre_conteudo {
+    animation: sobeSecao 0.6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    color: var(--cinza);
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--fonte-secundaria);
+  }
+  
+  .sobre_texto {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .apresentacao {
+    font-size: 2.3rem;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    grid-column: 1/-1;
+  }
+  
+  .sobre_texto h1::after {
+    background-color: var(--laranja);
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: "";
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .texto__apresentacao{
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+  
+  .sobre_info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .sobre_info i {
+    color: var(--verde);
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .sobre_info p {
+    font-size: 0.9rem;
+  }
+  
+  @keyframes sobeSecao {
+    from {
+      transform: translate3d(60px, 0, 0);
+    }
+  
+    to {
+      transform: rotate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes ladoSecao {
+    from {
+      transform: translate3d(-60px, 0, 0);
+    }
+  
+    to {
+      transform: rotate3d(0, 0, 0);
+    }
+  }
