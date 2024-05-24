@@ -58,6 +58,7 @@
     color: var(--laranja);
     font-size: 18px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .container__titulo--negrito {
