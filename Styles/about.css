@@ -1,4 +1,17 @@
 /* sessao principal sobre mim*/
+/* defino a opacidade para 0 */
+.sobre img,
+.sobre_conteudo {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+
+}
+/* animacao quando esta visivel */
+.sobre img.aparecer,
+.sobre_conteudo.aparecer{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
   
 .principal {
     background-color: var(--cor-de-fundo);
@@ -7,7 +20,6 @@
  .sobre {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     padding: 40px;
@@ -26,23 +38,19 @@
     margin-bottom: 15px;
     font-family: var(--fonte-principal);
     font-weight: 800;
-    text-shadow:1px 1px 0px var(--preto),
+    /* text-shadow:1px 1px 0px var(--preto),
     -1px -1px 0px var(--preto),
     1px -1px 0px var(--preto),
-    -1px 1px 0px var(--preto);
+    -1px 1px 0px var(--preto); */
   }
   
   .perfil {
-    color: var(--preto);
+    color: var(--cinza);
     font-size: 1.4rem;
     margin-bottom: 1rem;
     position: relative;
     font-family: var(--fonte-secundaria);
     font-weight: bold;
-    text-shadow:1px 1px 0px var(--verde),
-    -1px -1px 0px var(--verde),
-    1px -1px 0px var(--verde),
-    -1px 1px 0px var(--verde);
   }
   
    .pontos{
@@ -60,6 +68,7 @@
   }
   
   .sobre img {
+    grid-column: 1/-1;
     animation: ladoSecao 0.6s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
@@ -150,3 +159,14 @@
       transform: rotate3d(0, 0, 0);
     }
   }
+
+  @media screen and (min-width: 1024px) {
+
+    .sobre img {
+      grid-column: 1/1;
+    }
+
+.sobre{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
