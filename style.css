@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url(Styles/header.css);
 @import url(Styles/apresentacao.css);
+@import url(Styles/about.css);
 :root {
   --cor-de-fundo: #272727;
   --branco: #f7f7f7;
   --fonte-principal: "Poppins", sans-serif;
-  --fonte-secundaria: "Berkshire Swash", cursive;
+  --fonte-secundaria: "Lora", serif;
   --cinza: #747474;
   --laranja:#ff652f;
   --preto: #000;
+  --verde: #14a76c;
+  --amarelo: #ffe400;
   --amarelo-degrade: linear-gradient(97.54deg, #ffe400 35.49%, #ff652f 77.19%);
 
 }
