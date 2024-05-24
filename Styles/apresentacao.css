@@ -26,7 +26,7 @@
   }
   
   .texto_apresentacao {
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-secundaria);
     font-weight: 500;
     color: var(--branco);
     margin: 1em 0;
@@ -35,10 +35,12 @@
    .digitando {
     white-space: nowrap;
     color: var(--laranja);
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
   }
   
   .texto {
-    font-family: "Poppins";
+    font-family: var(--fonte-secundaria);
     font-weight: 200;
     color: var(--branco);
   }
